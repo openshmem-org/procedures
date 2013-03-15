@@ -1,0 +1,272 @@
+\chapter{Voting Rules}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Intent}
+
+This chapter was written with the following goals in mind:
+
+\begin{enumerate}
+\item Provide clear, unambiguous definitions and procedures for voting
+  on general text proposals, errata proposals, and changing this
+  document.
+\item Enforce a high degree of consensus before text is accepted into
+  the MPI standards document.
+\item Disallow arbitrary abuse of voting procedures.
+\end{enumerate}
+
+This proposal only details {\em official ballot} voting definitions
+and procedures.  Unofficial voting procedures, such as ``straw''
+votes, are outside the scope of this document.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Definitions}
+
+\begin{enumerate}
+\item {\bf Physical MPI Forum Meeting:} An open meeting of the entire
+  MPI Forum in a physical location (vs.\ a teleconference or other
+  virtual meeting).  In-person attendance to the meeting is open to
+  all organizations in the MPI Forum as well as the general public.
+
+\item {\bf Organization:} A business entity that sends one or more
+  representatives to a physical MPI Forum meeting.
+
+\item {\bf Registration:} Individuals register for each physical MPI
+  Forum meeting that they will attend.  At the time of registration,
+  individuals declare which organization they will represent at that
+  meeting.
+
+\item {\bf Overall Organization Eligibility (OOE):} An organization is
+  generally eligible to vote if it has registered and had one or more
+  representatives physically present at two out of the last three
+  physical MPI Forum meetings (including the current meeting).
+
+\item {\bf Individual Meeting Organization Voting Eligibility
+    (IMOVE):} An organization is eligible to vote at a specific
+  physical MPI Forum meeting if all of the following are true:
+  \begin{enumerate}
+  \item The organization is OOE.
+  \item An individual representing this organization registered for
+    that specific physical MPI Forum meeting before the first ballot
+    occured.
+  \item The organization had at least one of its representatives
+    physically present during that specific physical MPI
+    Forum meeting.
+  \end{enumerate}
+  Once an organization becomes IMOVE for a specific physical MPI Forum
+  meeting, that organization stays IMOVE for the remainder of that
+  specific physical MPI Forum meeting.  For example, if an
+  organization's only representative leaves the meeting, that
+  organization still remains IMOVE.
+
+\item {\bf Meeting Quorum:} Quorum is established at a physical MPI
+  Forum meeting when more than $\nicefrac{2}{3}$ of OOE organizations
+  have registered for that meeting.
+
+\item {\bf Individual Ballot Quorum:} Quorum is established for an
+  individual ballot when more than $\nicefrac{3}{4}$ of IMOVE
+  organizations at the meeting cast a vote (vs.\ abstain).  The number
+  of IMOVE organizations is counted at the beginning of each ballot.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Procedures}
+
+%-------------------------------------------------------------------------
+
+\subsection{Official Ballot Voting}
+
+Official ballot voting and formal readings occur only at physical MPI
+Forum meetings where a meeting quorum has been established.
+
+All official ballots must be announced and scheduled at least two
+weeks prior to the start date of the physical MPI Forum meeting at
+which they will be held.  The dates/times for official ballots will
+not change after two weeks prior to the beginning of the meeting to
+allow attendees to schedule their travel appropriately.
+
+For each official ballot, each IMOVE organization is individually
+polled for their vote.  The designated representative of an IMOVE
+organization may vote ``yes,'' vote ``no,'' or abstain from voting.
+Proxies are not permitted.  If no representative of an IMOVE
+organization is physically present at the time of the ballot, that
+organization has implicitly abstained.
+
+A ballot passes if:
+
+\begin{enumerate}
+\item The ballot meets the requirements for the individual ballot
+  quorum, and
+\item The number of ``yes'' votes is more than $\nicefrac{3}{4}$ of
+  the sum of ``yes'' and ``no'' votes.
+\end{enumerate}
+
+\begin{rationale}
+  The first condition prevents large numbers of abstentions from
+  skewing results.  The second condition sets a high requirement for
+  consensus before a ballot will pass.
+\end{rationale}
+
+Note that if a ballot fails to meet the required individual ballot
+quorum, the ballot can be re-cast one time at the same physical MPI
+Forum meeting.  The ballot may also be deferred to a subsequent
+physical MPI Forum meeting.  Specifically: failing to establish the
+individual ballot quorum does not mean that the ballot failed.
+
+%-------------------------------------------------------------------------
+
+\subsection{General Text Proposals}
+
+General text proposals for the MPI standards documents (including
+so-called ``companion documents'', such as the MPIR specification
+document) are usually ``not trivial'' changes, and typically add new
+semantics, change or clarify existing semantics, or remove
+previously-defined semantics.
+
+General text proposals use the following process to be accepted into
+an MPI standards document:
+
+\begin{enumerate}
+\item Have a formal reading at a physical MPI Forum meeting where the
+  meeting quorum has been met.
+  \begin{enumerate}
+  \item The final text of the proposal to be read must be made
+    publicly available via the general MPI Forum broadcast email list
+    at least two weeks prior to the start date of the physical MPI
+    Forum meeting at which it is to be formally read.
+  \item The formal reading must be scheduled on the physical MPI Forum
+    meeting's agenda at least two weeks prior to the meeting's start
+    date.
+  \item There is no criteria for ``passing'' or ``failing'' a formal
+    reading.  It is up to the proposal's author(s) to decide whether
+    to bring the proposal up for a formal ballot at a subsequent
+    meeting.
+  \end{enumerate}
+
+\item Pass a first official ballot at a physical MPI Forum meeting.
+  \begin{enumerate}
+  \item A proposal's first ballot can only be conducted after its
+    formal reading.
+  \item A proposal's first ballot must be conducted at a different
+    physical MPI Forum meeting than which it was formally read.
+  \end{enumerate}
+
+\item Pass a second official ballot at a physical MPI Forum meeting.
+  \begin{enumerate}
+  \item A proposal's second ballot can only be conducted after its
+    first ballot passes.
+  \item A proposal's second ballot must be conducted at a different
+    physical MPI Forum meeting than which it passed its first ballot.
+  \end{enumerate}
+
+\item Changes to proposal text after it was made available for the
+  formal reading (i.e., at least two weeks prior to the start date of
+  the physical MPI Forum meeting at which it was read) are permitted
+  in some cases:
+  \begin{enumerate}
+  \item Before the second ballot, changes are permitted if the text
+    delta is presented at a physical MPI Forum meeting and approved
+    via a special formal ballot of IMOVE organizations at that
+    meeting:
+    \begin{enumerate}
+    \item The ballot meets the requirements for the individual
+      ballot quorum, and
+    \item There are zero ``no'' votes.
+    \end{enumerate}
+    
+    \begin{rationale}
+      The first condition prevents a large number of abstentions.
+      The second condition ensure that all non-abstaining
+      organizations are unanimous in their consent of the text
+      changes.
+    \end{rationale}
+    
+    If the special ballot fails, the original text of the proposal
+    is used.
+
+  \item After the second ballot, text changes that do not change the
+    semantics of the proposal are permitted with the unanimous consent
+    of the relevant chapter committee(s).
+  \end{enumerate}
+\end{enumerate}
+
+Proposals may be voluntarily withdrawn at any time before the second
+ballot passes.
+
+Ballots may be deferred to a subsequent physical MPI Forum meeting in
+the following cases:
+
+\begin{enumerate}
+\item Before the ballot is conducted, the proposal author requests a
+  deferral to the next physical MPI Forum meeting.
+\item When the ballot is conducted, it fails to meet the individual
+  ballot quorum.
+\end{enumerate}
+
+If a proposal fails either of its ballots, or if a proposal is
+withdrawn, it must perform the entire procedure again (i.e., start
+over with a formal reading).  If either ballot fails to establish its
+per-ballot quorum, it may be re-cast within the timeframes specified
+above.
+
+%-------------------------------------------------------------------------
+
+\subsection{Errata Proposals}
+
+Errata proposals for the MPI standards documents are usually ``small''
+and deal with ``critical'' changes to documents to correct errors,
+clarify egregious ambiguities, etc.
+
+Errata proposals use the following process to be accepted into an MPI
+standards document:
+
+\begin{enumerate}
+
+\item Pass a single official ballot at a physical MPI Forum meeting.
+  \begin{enumerate}
+  \item Final errata proposal text must be made publicly available by
+    the Errata document editor via the general MPI Forum broadcast
+    email list at least two weeks prior to the start date of the
+    physical MPI Forum meeting at which its ballot will occur.
+  \end{enumerate}
+
+\item Changes to proposal text after it was made available (i.e., at
+  least two weeks prior to the start date of the physical MPI Forum
+  meeting at which it was balloted) are permitted in some cases:
+  \begin{enumerate}
+  \item Before the ballot, changes are permitted if the text delta is
+    presented at a physical MPI Forum meeting and approved via a
+    special formal ballot of IMOVE organizations at that meeting:
+    \begin{enumerate}
+    \item The ballot meets the requirements for the individual
+      ballot quorum, and
+    \item There are zero ``no'' votes.
+    \end{enumerate}
+    
+    If the special ballot fails, the original text of the errata
+    proposal is used.
+  \item After the ballot, text changes that do not change the
+    semantics of the proposal are permitted with the unanimous consent
+    of the relevant chapter committee(s).
+  \end{enumerate}
+\end{enumerate}
+
+If an errata proposal fails its ballot, it must perform the entire
+procedure again (i.e., start over by posting the text a minimum of two
+weeks before a physical MPI Forum meeting).
+
+Procedures for deferring errata proposal ballots are the same as
+those for general text proposals.
+
+
+%-------------------------------------------------------------------------
+
+\subsection{Changing These Rules}
+
+The procedure for changing these rules is essentially the same as for
+Errata Proposals: publish the proposed change at least two weeks prior
+to a physical MPI Forum meeting and then pass one official ballot.
+
+% LocalWords:  OOE IMOVE
