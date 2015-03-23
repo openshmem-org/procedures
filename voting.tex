@@ -8,10 +8,11 @@ This chapter was written with the following goals in mind:
 
 \begin{enumerate}
 \item Provide clear, unambiguous definitions and procedures for voting
-  on general text proposals, errata proposals, and changing this
+  on general text proposals, errata proposals, the final standard and changing this
   document.
 \item Enforce a high degree of consensus before text is accepted into
   the MPI standards document.
+\item Ensure a process that ensures a high quality standard that is both well thought through and allows for fixes found in final review stages.
 \item Disallow arbitrary abuse of voting procedures.
 \end{enumerate}
 
@@ -82,7 +83,8 @@ Official ballot voting and formal readings occur only at physical MPI
 Forum meetings where a meeting quorum has been established.
 
 All official ballots must be announced and scheduled at least two
-weeks prior to the start date of the physical MPI Forum meeting at
+weeks prior (four weeks prior in case of votes for a final standard
+document) to the start date of the physical MPI Forum meeting at
 which they will be held.  The dates/times for official ballots will
 not change after two weeks prior to the beginning of the meeting to
 allow attendees to schedule their travel appropriately.
@@ -262,11 +264,83 @@ those for general text proposals.
 
 
 %-------------------------------------------------------------------------
+`
+\subsection{Process to Ratify a Full MPI Standard Document}
+
+Once a series of changes (errata and text proposals) are voted in by the MPI forum using the processes above, the forum can decide to publish a new version of the entire MPI standard. This could be a new minor or major version of the standard and the process below applies to either. The chair, after consulting with the members of the forum, initiates this process.
+
+The ratification process of a new standard document must start at a physical meeting and only changes voted into the standard before the meeting (either using a single vote in case of erratas or a completed second vote in the case of text changes) can be considered for inclusion into the standard. In addition, chapter committees are allowed to make small, trivial, and non-semantic changing fixes to their chapters.
+
+The process for the ratification uses the following process:
+
+\begin{enumerate}
+\item Publish a Release Candidate Draft (two weeks prior to the meeting)
+\begin{enumerate}
+\item Chapter committee chairs integrate approved changes and/or minor, non-semantic fixes to their chapters into a release candidate version of the MPI standard
+\item Chapter committees review changes to their chapters to ensure that tickets have been integrated correctly and note any report any problems either in the implementation of the changes or new issues found during the review
+\item Chapter committee chairs make the draft of their chapter available to the forum, along with a list of changes (e.g., in the form of a diff or marked up PDF) and a list of problems found during the review
+\end{enumerate}
+\item Review of the release candidate draft by the MPI forum (in the two weeks leading up the forum)
+\item Create final review candidate and list of open issues (at the forum meeting)
+\begin{enumerate}
+\item Quorum (same as for individual text change votes) must be established, otherwise the discussions get postponed the next meeting that meets quorum
+\item All chapter chairs (or designees) read their chapters, with a focus on the changes done
+\begin{itemize}
+\item Any issues found in implementing the ticket up to two weeks prior to the meeting should have been implemented
+\item Any issues found in implementing the ticket within two weeks of the meeting, should be implemented, but reported to the forum and added to a list of open issues
+\item Any technical issues found with voted tickets or with the existing standard, should be reported and discussed and then added to the list of open issues
+\item Issues on the list of open issues must be no larger than errata quality
+\end{itemize}
+\item The MPI forum collectively reviews the MPI entire MPI standard and adds found issues (aside from white spaces or grammatical changes) to the list of open issues 
+\item The MPI forum votes on the release candidate (same ballot rules as for individual votes on text changes), which includes the actual text plus the list of open issues found during the review process.
+\begin{itemize}
+\item If the vote fails, the clock gets reset, and a new release draft needs to be create and presented
+\item If the vote passes, the next MPI forum meeting will be ratification meeting for the new standard
+\end{itemize}
+\end{enumerate}
+\item Review changes and implement minor issues (up to four prior to ratification meeting)
+\begin{enumerate}
+\item Chapter chairs integrate minor and non-semantic changes identified by the review into their chapters
+\item Chapter committees together with the respective working groups work on solutions for the larger open issues and integrate draft solutions (listed in  the approved list of open issues) into the standard (in a way they can be tracked and, if necessary, backed out)
+\end{enumerate}
+\item Publish final draft (four weeks before the meeting)
+\begin{itemize}
+\item MPI forum chair published the current version in the release draft repository
+\item The repository is frozen
+\end{itemize}
+\item Review of the final  draft by the MPI forum (in the four weeks leading up the forum)
+\item Ratify final version (at the forum meeting)
+\begin{enumerate}
+\item Quorum (same as for individual text change votes) must be established, otherwise the discussions get postponed the next meeting that meets quorum
+\item All chapter chairs read the changes to their chapters and the MPI forum ratifies changes
+\begin{itemize}
+\item Changes proposed since the MPI draft was created four weeks before the meeting or other changes that were found before, but were not on the approved list of open issues, must be approved via a
+    special formal ballot of IMOVE organizations at that meeting:
+    \begin{enumerate}
+    \item The ballot meets the requirements for the individual
+      ballot quorum, and
+    \item There are zero ``no'' votes.
+    \end{enumerate}
+\item Changes, that were on the approved open issues list must be approved with a single vote using the same procedure as single votes for text changes
+\begin{itemize}
+\item If a ballot fails, the respective change will be backed out of the final draft
+\end{itemize}
+\item At least one day after the last ballot vote on changes, the MPI forum will conduct to the final vote on the MPI standard, using the same procedure as single votes for text changes
+\item If approved, the document editor will add the ratification date to the document and publish the final and official version of the standard
+\end{itemize}
+
+\end{enumerate}
+ 
+\end{enumerate}
+
+%-------------------------------------------------------------------------
 
 \subsection{Changing These Rules}
 
 The procedure for changing these rules is essentially the same as for
 Errata Proposals: publish the proposed change at least two weeks prior
-to a physical MPI Forum meeting and then pass one official ballot.
+to a physical MPI Forum meeting and then pass one official ballot. The
+new rules take effect as soon as they are approved/voted in by the
+MPI forum.
 
 % LocalWords:  OOE IMOVE
