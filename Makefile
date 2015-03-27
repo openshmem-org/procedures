@@ -14,7 +14,7 @@ MAIN_TEX	= procedures.tex
 # ensure that whenever one of the "other" files changes, "make" will
 # rebuild your paper.
 
-OTHER_SRC_FILES	= voting.tex voters.tex proposers.tex
+OTHER_SRC_FILES	= terms.tex voting.tex voters.tex proposers.tex
 
 # BibTeX sources.  The bibliography will automatically be re-generated
 # if these files change.
