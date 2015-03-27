@@ -276,6 +276,9 @@ major version of the standard; the proces below applies to either.
 The Forum Chair, after consulting with the members of the Forum,
 initiates this process.
 
+{\Huge This isn't quite right -- process doesn't start *at* a physical
+  meeting -- it starts *before* the meeting}
+
 The ratification process of a new MPI Standard Document must start at
 a physical meeting; only changes voted into the MPI Standard Document
 before the meeting (either using a single vote in case of erratas or a
@@ -284,16 +287,15 @@ for inclusion into the published document.  In addition, Chapter
 Committees are allowed to make small / trivial changes to their
 chapters that do not change any semantics.
 
-The process for the ratification is similar to those outlined in
-``General Text Proposals''
-(section~\ref{subsec:general-text-proposals}); for example, ballots
-are cast at two sequential physical MPI Forum meetings.
+Ratification requires ballots at two consecutive physical MPI forum
+meetings.  The first physical MPI Forum meeting in the sequence is
+called the Release Candidate Meeting (RCM); the second meeting in the
+sequence is called the Final Ratification Meeting (FRM).
 
-The exact process is as follows:
+Ratification procedures are as follows:
 
 \begin{enumerate}
-\item Prior to two weeks before the start of the first physical MPI
-  Forum meeting:
+\item Prior to two weeks before the start of the RCM:
   \begin{itemize}
   \item Chapter Committee Chairs integrate approved changes and/or
     minor, non-semantic fixes to their chapters into the MPI Standard
@@ -306,39 +308,35 @@ The exact process is as follows:
     problems must be itemized for review by the Forum.
   \end{itemize}
 
-\item At least two weeks before the start of the first physical MPI
-  Forum meeting:
+\item At least two weeks before the start of the RCM:
   \begin{enumerate}
   \item Chapter Committee Chairs publish the following for the Forum
     members to review:
     \begin{itemize}
-      \item Release Candidate Drafts of their chapters.
+      \item Release Candidate Drafts (in PDF form) of their chapters.
       \item Changes to the chapter since the last published version
         (preferably in the form of a colorized diff, or a marked up
         PDF, or some other easily-reviewable format showing the
         changes).
       \item List of still-unresolved problems, including (but not
-        limited to): mistakes in implementing approved changes, and
-        problems with/mistakes in approved changes.
+        limited to) problems with or mistakes in approved changes.
     \end{itemize}
-  \item {\Huge NEW} The MPI Standard Document Editor publishes a
-    Release Candidate Draft of the entire MPI Standard Document,
-    including all the changes from all Chapter Committees.
+  \item The MPI Standard Document Editor publishes a Release Candidate
+    Draft of the entire MPI Standard Document (in PDF form), including
+    all the changes from all Chapter Committees.
   \end{enumerate}
 
-\item In the two-week window before the start of the first physical
-  MPI Forum meeting:
+\item In the two-week window before the start of the RCM:
   \begin{enumerate}
   \item MPI Forum members review all the material published by the
-    Chapter Committee Chairs.
+    Chapter Committee Chairs and MPI Standard Document Editor.
   \item Chapter Committees continue to work on still-unresolved
-    issues.  {\em Any} changes to text after the Chapter Committee
-    Chair published the final draft at the two-week window must be
-    specifically discussed with the Forum at the first physical MPI
-    Forum meeting.
+    issues.  {\em Any} changes to text after the MPI Standard Document
+    Editor published the final draft at the two-week window must be
+    specifically discussed with the Forum at the RCM.
   \end{enumerate}
 
-\item At the first physical MPI Forum meeting:
+\item At the RCM:
   \begin{enumerate}
   \item All Chapter Committee Chairs (or their designees) read their
     chapters for the entire Forum.  The focus of the readings is the
@@ -353,11 +351,7 @@ The exact process is as follows:
     \item Any technical issues found with approved changes or with the
       existing MPI Standard Document.
     \item Any changes that were made within two weeks of the beginning
-      of the first physical MPI Forum meeting.
-    \item Issues on the list of open issues must be ``errata
-      quality,'' -- they must be ``small'' and easily resolved.
-      Larger changes are not permitted since they would reset the
-      clock (NEED TO COME BACK TO THIS...).
+      of the RCM.
     \end{itemize}
 
   \item The MPI Forum collectively reviews the entire Release
@@ -372,15 +366,23 @@ The exact process is as follows:
       with approved changes.
     \end{itemize}
 
+  \item The MPI Forum compiles a list of all still-unresolved issues
+    that will be fixed before this release of the MPI Standard
+    Document.
+    \begin{itemize}
+    \item Forum members are encouraged to only allow
+      ``errata''-quality items on the list of still-unresolved
+      issues.  Larger items should either delay the ratification
+      process or be deferred to a future version of the MPI Standard
+      Document.
+    \end{itemize}
+
   \item Per section~\ref{subsec:general-text-proposals}, a first
     ballot is conducted on ratifying the entire Release Candidate
-    Draft MPI Standard Document {\em along with} the complete listing
-    of all still-unresolved issues (e.g., any issues that were found
-    before the first physical MPI Forum meeting along with any that
-    were found during the first physical MPI Forum meeting).
+    Draft MPI Standard Document {\em along with} the listing of all
+    still-unresolved issues created in the previous step.
     \begin{itemize}
-    \item The ballot fails, the entire procedure must be repeated,
-      starting at the next physical MPI Forum meeting.
+    \item If the ballot fails, the entire procedure must be repeated.
     \end{itemize}
   \end{enumerate}
 
@@ -390,95 +392,32 @@ The exact process is as follows:
 % JMS Continue here
 {\Huge JMS continue here}
 
-
-
-\item Prior to two weeks before the start of the second physical MPI
-  Forum meeting:
+\item Prior to four weeks before the start of the FRM:
   \begin{itemize}
   \item Fix all pending issues
   \end{itemize}
 
-\item At least two weeks before the start of the second physical MPI
-  Forum meeting:
+\item At least four weeks before the start of the FRM:
   \begin{itemize}
   \item Publish a new Draft
-  \item Publish list of all fixes since last meeting
+  \item Publish list of all fixes since the RCM
+  \item Editor freezes the doc
   \end{itemize}
 
-\item At the second physical MPI Forum meeting:
+\item At the FRM:
   \begin{itemize}
-  \item Ballot/vote on all the fixes since the last meeting
-  \item Ballot/vote on the entire document
+  \item Ballot/vote on each individual change that originated from the
+    still-unresolve list at the RCM (and was done before the 4-week
+    window).  Use the regular voting methodology here.
+  \item Ballot/vote for any other change since the RCM.  Use the ``no
+    no votes'' methodology here.
+
+  \item ...must be a night in between these votes...
+
+  \item Ballot/vote on the entire document (historical note: prior
+    documents have been voted on by chapter -- we ain't doing dat no
+    more)
   \end{itemize}
-
-
-
-
-
-
-
-
-% JMS Continue here
-{\Huge JMS continue here}
-
-
-
-\item Review changes and implement minor issues (up to four prior to
-  ratification meeting)
-  \begin{enumerate}
-  \item Chapter chairs integrate minor and non-semantic changes
-    identified by the review into their chapters
-  \item Chapter committees together with the respective working groups
-    work on solutions for the larger open issues and integrate draft
-    solutions (listed in the approved list of open issues) into the
-    MPI Standard Document (in a way they can be tracked and, if
-    necessary, backed out)
-  \end{enumerate}
-\item Publish final draft (four weeks before the meeting)
-  \begin{itemize}
-  \item MPI forum chair published the current version in the release
-    draft repository
-  \item The repository is frozen
-  \end{itemize}
-\item Review of the final draft by the MPI forum (in the four weeks
-  leading up the forum)
-\item Ratify final version (at the forum meeting)
-  \begin{enumerate}
-  \item Quorum (same as for individual text change votes) must be
-    established, otherwise the discussions get postponed the next
-    meeting that meets quorum
-  \item All chapter chairs read the changes to their chapters and the
-    MPI forum ratifies changes
-    \begin{itemize}
-    \item Changes proposed since the MPI draft was created four weeks
-      before the meeting or other changes that were found before, but
-      were not on the approved list of open issues, must be approved
-      via a special formal ballot of IMOVE organizations at that
-      meeting:
-      \begin{enumerate}
-      \item The ballot meets the requirements for the individual
-        ballot quorum, and
-      \item There are zero ``no'' votes.
-      \end{enumerate}
-    \item Changes, that were on the approved open issues list must be
-      approved with a single vote using the same procedure as single
-      votes for text changes
-      \begin{itemize}
-      \item If a ballot fails, the respective change will be backed
-        out of the final draft
-      \end{itemize}
-    \item At least one day after the last ballot vote on changes, the
-      MPI forum will conduct to the final vote on the MPI Standard
-      Document, using the same procedure as single votes for text
-      changes
-    \item If approved, the document editor will add the ratification
-      date to the document and publish the final and official version
-      of the MPI Standard Document
-    \end{itemize}
-  \end{enumerate}
-\end{enumerate}
-
-}} % color red
 
 %-------------------------------------------------------------------------
 
