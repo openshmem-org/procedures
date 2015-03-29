@@ -4,26 +4,81 @@
 
 {\color{red}{
 
-Need to define roles of people:
+\section{Document Definitions}
+
+This document defines rules and conventions for the creation of two types of documents:
 
 \begin{itemize}
-\item MPI Forum
-\item MPI Forum Steering Committee
-\item MPI Forum Chair
-\item MPI Forum Secretary
-\item Chapter Committee Chair (sometimes referred to as ``Chapter
-  Author'')
-\item Chapter Committee
+\item {\bf MPI Standard Document:} the main document defining the Message Passing Interface standard. Any API definition that is directly callable by users in a first party fashion is defined in this document.
+\item {\bf MPI Companion Documents:} additional, official and binding documents published by the MPI forum in addition to the MPI Standard Document. These documents contain additional, external interfaces, callable from external processes in a third party fashion (mostly for debugging purposes).
 \end{itemize}
 
-Need to define terms:
+Both types of documents are marked with monotonically increasing major/minor version numbers.
+
+\section{Definitions of Roles}
+
+The following defines the roles of the people or groups of people involved in the MPI standardization process:
 
 \begin{itemize}
-\item MPI Standard Document
-\item MPI Companion Documents
+\item {\bf MPI Forum:} the group of people actively involved in the standardization process, either by participation in physical meetings or by participation in MPI working groups or chapter committees.
+\item {\bf MPI Forum Chair:} is responsible for organizing the agenda for face to face meetings as well as the activities leading to the publication of MPI Standard and MPI Companion Documents. The forum chair also maintains the overall outside presence of the MPI forum.
+\item {\bf MPI Forum Secretary:} is responsible for organizing and recording ballots as well as artifacts from the face to face meetings. 
+\item {\bf MPI Standard Document Editor:} is responsible for maintaining the overall document and its repository and for publishing newly ratified versions of the MPI standard.
+\item {\bf Chapter Committee Chair (sometimes referred to as ``Chapter
+  Author''):} is responsible for implementing changes into the respective chapters and for organizing the review process for all changes that affect the respective chapter
+\item {\bf Chapter Committee:} assists the chapter committee chair in implementing and reviewing changes for the respective chapters.
+\item {\bf Work Group:} group of people working on individual, possibly cross-cutting topics that can lead to proposed changes for the MPI standard. Working groups can be established at MPI forum meetings once support from at least four organizations with voting rights has been confirmed.
+\item {\bf Working Group Chair:} is responsible for organizing the work in the working group, reporting to the forum on progress in the working group, maintains the outside presence of the working group (incl. maintaining the respective Wiki pages) and organizing regular meetings.
 \end{itemize}
 
-Do we want to put the definitions that are currently in the voting
-chapter here?  E.g., OOE, IMOVE, etc.
+\section{Ballot Definitions}
+
+\begin{itemize}
+\item {\bf Physical MPI Forum Meeting:} An open meeting of the entire
+  MPI Forum in a physical location (vs.\ a teleconference or other
+  virtual meeting).  In-person attendance to the meeting is open to
+  all organizations in the MPI Forum as well as the general public.
+
+\item {\bf Organization:} A business entity that sends one or more
+  representatives to a physical MPI Forum meeting.
+
+\item {\bf Registration:} Individuals register for each physical MPI
+  Forum meeting that they will attend.  At the time of registration,
+  individuals declare which organization they will represent at that
+  meeting.
+
+\item {\bf Overall Organization Eligibility (OOE):} An organization is
+  generally eligible to vote if it has registered and had one or more
+  representatives physically present at two out of the last three
+  physical MPI Forum meetings (including the current meeting).
+
+\item {\bf Individual Meeting Organization Voting Eligibility
+    (IMOVE):} An organization is eligible to vote at a specific
+  physical MPI Forum meeting if all of the following are true:
+  \begin{itemize}
+  \item The organization is OOE.
+  \item An individual representing this organization registered for
+    that specific physical MPI Forum meeting before the first ballot
+    occured.
+  \item The organization had at least one of its representatives
+    physically present during that specific physical MPI
+    Forum meeting.
+  \end{itemize}
+  Once an organization becomes IMOVE for a specific physical MPI Forum
+  meeting, that organization stays IMOVE for the remainder of that
+  specific physical MPI Forum meeting.  For example, if an
+  organization's only representative leaves the meeting, that
+  organization still remains IMOVE.
+
+\item {\bf Meeting Quorum:} Quorum is established at a physical MPI
+  Forum meeting when more than $\nicefrac{2}{3}$ of OOE organizations
+  have registered for that meeting.
+
+\item {\bf Individual Ballot Quorum:} Quorum is established for an
+  individual ballot when more than $\nicefrac{3}{4}$ of IMOVE
+  organizations at the meeting cast a vote (vs.\ abstain).  The number
+  of IMOVE organizations is counted at the beginning of each ballot.
+\end{itemize}
+
 
 }} % color red

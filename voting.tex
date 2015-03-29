@@ -22,54 +22,56 @@ votes, are outside the scope of this document.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Definitions}
+%Moved to terms.tex
 
-\begin{enumerate}
-\item {\bf Physical MPI Forum Meeting:} An open meeting of the entire
-  MPI Forum in a physical location (vs.\ a teleconference or other
-  virtual meeting).  In-person attendance to the meeting is open to
-  all organizations in the MPI Forum as well as the general public.
-
-\item {\bf Organization:} A business entity that sends one or more
-  representatives to a physical MPI Forum meeting.
-
-\item {\bf Registration:} Individuals register for each physical MPI
-  Forum meeting that they will attend.  At the time of registration,
-  individuals declare which organization they will represent at that
-  meeting.
-
-\item {\bf Overall Organization Eligibility (OOE):} An organization is
-  generally eligible to vote if it has registered and had one or more
-  representatives physically present at two out of the last three
-  physical MPI Forum meetings (including the current meeting).
-
-\item {\bf Individual Meeting Organization Voting Eligibility
-    (IMOVE):} An organization is eligible to vote at a specific
-  physical MPI Forum meeting if all of the following are true:
-  \begin{enumerate}
-  \item The organization is OOE.
-  \item An individual representing this organization registered for
-    that specific physical MPI Forum meeting before the first ballot
-    occured.
-  \item The organization had at least one of its representatives
-    physically present during that specific physical MPI
-    Forum meeting.
-  \end{enumerate}
-  Once an organization becomes IMOVE for a specific physical MPI Forum
-  meeting, that organization stays IMOVE for the remainder of that
-  specific physical MPI Forum meeting.  For example, if an
-  organization's only representative leaves the meeting, that
-  organization still remains IMOVE.
-
-\item {\bf Meeting Quorum:} Quorum is established at a physical MPI
-  Forum meeting when more than $\nicefrac{2}{3}$ of OOE organizations
-  have registered for that meeting.
-
-\item {\bf Individual Ballot Quorum:} Quorum is established for an
-  individual ballot when more than $\nicefrac{3}{4}$ of IMOVE
-  organizations at the meeting cast a vote (vs.\ abstain).  The number
-  of IMOVE organizations is counted at the beginning of each ballot.
-\end{enumerate}
+%\section{Definitions}
+%
+%\begin{enumerate}
+%\item {\bf Physical MPI Forum Meeting:} An open meeting of the entire
+%  MPI Forum in a physical location (vs.\ a teleconference or other
+%  virtual meeting).  In-person attendance to the meeting is open to
+%  all organizations in the MPI Forum as well as the general public.
+%
+%\item {\bf Organization:} A business entity that sends one or more
+%  representatives to a physical MPI Forum meeting.
+%
+%\item {\bf Registration:} Individuals register for each physical MPI
+%  Forum meeting that they will attend.  At the time of registration,
+%  individuals declare which organization they will represent at that
+%  meeting.
+%
+%\item {\bf Overall Organization Eligibility (OOE):} An organization is
+%  generally eligible to vote if it has registered and had one or more
+%  representatives physically present at two out of the last three
+%  physical MPI Forum meetings (including the current meeting).
+%
+%\item {\bf Individual Meeting Organization Voting Eligibility
+%    (IMOVE):} An organization is eligible to vote at a specific
+%  physical MPI Forum meeting if all of the following are true:
+%  \begin{enumerate}
+%  \item The organization is OOE.
+%  \item An individual representing this organization registered for
+%    that specific physical MPI Forum meeting before the first ballot
+%    occured.
+%  \item The organization had at least one of its representatives
+%    physically present during that specific physical MPI
+%    Forum meeting.
+%  \end{enumerate}
+%  Once an organization becomes IMOVE for a specific physical MPI Forum
+%  meeting, that organization stays IMOVE for the remainder of that
+%  specific physical MPI Forum meeting.  For example, if an
+%  organization's only representative leaves the meeting, that
+%  organization still remains IMOVE.
+%
+%\item {\bf Meeting Quorum:} Quorum is established at a physical MPI
+%  Forum meeting when more than $\nicefrac{2}{3}$ of OOE organizations
+%  have registered for that meeting.
+%
+%\item {\bf Individual Ballot Quorum:} Quorum is established for an
+%  individual ballot when more than $\nicefrac{3}{4}$ of IMOVE
+%  organizations at the meeting cast a vote (vs.\ abstain).  The number
+%  of IMOVE organizations is counted at the beginning of each ballot.
+%\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -272,22 +274,24 @@ those for general text proposals.
 Once a series of changes (errata and text proposals) are voted in by
 the MPI Forum using the processes above, the Forum can publish a new
 revision of the MPI Standard Document.  This could be a new minor or
-major version of the standard; the proces below applies to either.
+major version of the standard; the process below applies to either.
 The Forum Chair, after consulting with the members of the Forum,
 initiates this process.
 
-{\Huge This isn't quite right -- process doesn't start *at* a physical
+{\Huge CHANGED TO ADDRESS: This isn't quite right -- process doesn't start *at* a physical
   meeting -- it starts *before* the meeting}
 
-The ratification process of a new MPI Standard Document must start at
+The ratification process of a new MPI Standard Document must start at the end of
 a physical meeting; only changes voted into the MPI Standard Document
-before the meeting (either using a single vote in case of erratas or a
+up to the end of that meeting (either using a single vote in case of erratas or a
 completed second vote in the case of text changes) can be considered
 for inclusion into the published document.  In addition, Chapter
 Committees are allowed to make small / trivial changes to their
 chapters that do not change any semantics.
 
-Ratification requires ballots at two consecutive physical MPI forum
+%MS: removed consecutive - quorum issues?
+
+The ratification process then requires ballots at two following physical MPI forum
 meetings.  The first physical MPI Forum meeting in the sequence is
 called the Release Candidate Meeting (RCM); the second meeting in the
 sequence is called the Final Ratification Meeting (FRM).
@@ -382,41 +386,31 @@ Ratification procedures are as follows:
     Draft MPI Standard Document {\em along with} the listing of all
     still-unresolved issues created in the previous step.
     \begin{itemize}
-    \item If the ballot fails, the entire procedure must be repeated.
+    \item If the ballot fails, the entire procedure must be repeated, possibly starting a new RCM at the next physical meeting.
     \end{itemize}
   \end{enumerate}
 
-
-
-
-% JMS Continue here
-{\Huge JMS continue here}
-
 \item Prior to four weeks before the start of the FRM:
   \begin{itemize}
-  \item Fix all pending issues
+  \item Chapter committees and working groups work on resolving the issues in the list of open issues and integrate changes into the Release Candidate document and review any changes made.
   \end{itemize}
 
 \item At least four weeks before the start of the FRM:
   \begin{itemize}
-  \item Publish a new Draft
-  \item Publish list of all fixes since the RCM
-  \item Editor freezes the doc
+  \item Chapter Committee Chairs publish a final draft of their chapters
+  \item Chapter Committee Chairs publish list of all changes made since the RCM, including changes made based on the list of open issues.
+  \item The editor freezes the Release Candidate document and publishes it to the MPI forum.
   \end{itemize}
 
 \item At the FRM:
   \begin{itemize}
-  \item Ballot/vote on each individual change that originated from the
-    still-unresolve list at the RCM (and was done before the 4-week
+  \item The MPI forum conducts a series of ballots on each individual change that originated from the
+    list of open issues decided upon at the RCM (and was done before the 4-week
     window).  Use the regular voting methodology here.
-  \item Ballot/vote for any other change since the RCM.  Use the ``no
+  \item The MPI forum conducts a series of ballots for any other change since the RCM.  Use the ``no
     no votes'' methodology here.
-
-  \item ...must be a night in between these votes...
-
-  \item Ballot/vote on the entire document (historical note: prior
-    documents have been voted on by chapter -- we ain't doing dat no
-    more)
+  \item With at least one night separating this from the previous series of votes, the MPI forum conducts a final ballot on the entire document to ratify the new version of the MPI standards document (historical note: prior documents have been voted on by chapter, which is no longer the case now)
+  \item The editor adds a date stamp to the document and publishes it to the MPI forum web page.
   \end{itemize}
 \end{enumerate}
 
