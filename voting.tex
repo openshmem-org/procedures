@@ -331,7 +331,7 @@ Ratification procedures are as follows:
       Document.
     \end{itemize}
 
-  \item Per section~\ref{subsec:general-text-proposals}, a first
+  \item\label{voting:rcm:ballot} Per section~\ref{subsec:general-text-proposals}, a first
     ballot is conducted on ratifying the entire Release Candidate
     Draft MPI Standard Document {\em along with} the listing of all
     still-unresolved issues and whitespace/spelling/typo fixes created
@@ -345,8 +345,8 @@ Ratification procedures are as follows:
     conditions are true:
 
     \begin{itemize}
-    \item The first ballot on the Release Candidate Draft MPI Standard
-      Document passed.
+    \item The ballot {\color{red}from (\ref{voting:rcm:ballot}) at the
+      same meeting} passed.
     \item  The list of still-unresolved issues is empty.
     \item The Forum resolved all other minor issues, such as
       formatting and whitespace problems, spelling errors, and other
@@ -363,11 +363,13 @@ Ratification procedures are as follows:
     \end{itemize}
 
     \item If all conditions are met, the ratification is fast tracked,
-      steps 6 through 9b) are skipped, and step 9c) can be performed
-      at the RCM.
+      steps {\color{red}(\ref{voting:slow-track-begin}) through
+        (\ref{voting:slow-track-end}) are skipped, and step
+        (\ref{voting:fast-track-begin})} can be performed at the RCM.
   \end{enumerate}
 
-\item Prior to four weeks before the start of the FRM:
+\item\label{voting:slow-track-begin} Prior to four weeks before the
+  start of the FRM:
   \label{subsec:official-ballot-voting:t-4weeks-frm}
   \begin{itemize}
   \item Chapter Committees and Working Groups work on resolving the
@@ -399,14 +401,15 @@ Ratification procedures are as follows:
     change that originated from the list of open issues decided upon
     at the RCM (and was completed before the four-week window).
     Ballots that fail must have their changes reverted.
-  \item The MPI Forum Secretary conducts a series of ballots for all
-    other changes made since the RCM.  In addition to the procedures
-    listed in Section~\ref{subsec:official-ballot-voting}, if any
-    ``no'' votes are recorded in the ballot for a given change, this
-    change must be reverted.
-  \item The MPI Forum Chair compiles a list of all still-unresolved
-    issues that could be fixed before this release of the MPI
-    Standard Document.
+  \item\label{voting:slow-track-end} The MPI Forum Secretary conducts
+    a series of ballots for all other changes made since the RCM.  In
+    addition to the procedures listed in
+    Section~\ref{subsec:official-ballot-voting}, if any ``no'' votes
+    are recorded in the ballot for a given change, this change must be
+    reverted.
+  \item\label{voting:fast-track-begin} The MPI Forum Chair compiles a
+    list of all still-unresolved issues that could be fixed before
+    this release of the MPI Standard Document.
 
   \item On a different calendar date than any other ballots conducted
     at this meeting related to this document ratification:
