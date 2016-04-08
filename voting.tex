@@ -8,17 +8,17 @@ This chapter was written with the following goals in mind:
 
 \begin{enumerate}
 \item Provide clear, unambiguous definitions and procedures for voting
-  on general text proposals, errata proposals, the final
-  MPI Standard Document and changing this document.
+  on general text proposals, the final
+  OpenSHMEM Specification Document, and changes to this document.
 \item Enforce a high degree of consensus before text is accepted into
-  the MPI Standard Document.
+  the OpenSHMEM Specification Document.
 \item Specify a process that ensures a high quality
-  MPI Standard Document and that allows for fixes to the
-  MPI Standard Document for issues found in final review stages.
+  OpenSHMEM Specification Document and that allows for fixes to the
+  OpenSHMEM Specification Document for issues found in final review stages.
 \item Disallow arbitrary abuse of voting procedures.
 \end{enumerate}
 
-This proposal only details {\em official ballot} voting definitions
+This document only details {\em official ballot} voting definitions
 and procedures.  Unofficial voting procedures, such as ``straw''
 votes, are outside the scope of this document.
 
@@ -31,21 +31,21 @@ votes, are outside the scope of this document.
 \subsection{Official Ballot Voting}
 \label{subsec:official-ballot-voting}
 
-Official ballot voting and formal readings occur only at physical MPI
-Forum meetings where a meeting quorum has been established.
+Official ballot voting and formal readings occur only at official OpenSHMEM
+Committee meetings where a meeting quorum has been established.
 
 All official ballots must be announced and scheduled at least two
-weeks prior (four weeks prior in case of votes for a final MPI Standard
-Document) to the start date of the physical MPI Forum meeting at
+weeks prior (four weeks prior in case of votes for a final OpenSHMEM Specification
+Document) to the start date of the official OpenSHMEM Committee meeting at
 which they will be held.  The dates/times for official ballots will
 not change after two weeks prior to the beginning of the meeting to
-allow attendees to schedule their travel appropriately.
+allow attendees to schedule their attendance appropriately.
 
-For each official ballot, each IMOVE organization is individually
-polled for their vote.  The designated representative of an IMOVE
+For each official ballot, each OOE organization is individually
+polled for their vote.  The designated representative of an OOE
 organization may vote ``yes,'' vote ``no,'' or abstain from voting.
-Proxies are not permitted.  If no representative of an IMOVE
-organization is physically present at the time of the ballot, that
+Proxies are not permitted.  If no representative of an OOE
+organization is present at the time of the ballot, that
 organization has implicitly abstained.
 
 A ballot passes if:
@@ -64,34 +64,28 @@ A ballot passes if:
 \end{rationale}
 
 Note that if a ballot fails to meet the required individual ballot
-quorum, the ballot can be re-cast one time at the same physical MPI
-Forum meeting.  The ballot may also be deferred to a subsequent
-physical MPI Forum meeting.  Specifically: failing to establish the
+quorum, the ballot can be re-cast one time at the same official OpenSHMEM
+Committee meeting.  The ballot may also be deferred to a subsequent
+official OpenSHMEM Committee meeting.  Specifically: failing to establish the
 individual ballot quorum does not mean that the ballot failed.
 
 %-------------------------------------------------------------------------
 
-\subsection{General Text Proposals}
+\subsection{Proposals}
 \label{subsec:general-text-proposals}
 
-General text proposals for the MPI Standard Document (including
-MPI Companion Documents, such as the MPIR specification
-document) are usually ``not trivial'' changes, and typically add new
-semantics, change or clarify existing semantics, or remove
-previously-defined semantics.
-
-General text proposals use the following process to be accepted into
-an MPI Standard Document:
+Proposals use the following process to be accepted into
+an OpenSHMEM Specification Document:
 
 \begin{enumerate}
-\item Have a formal reading at a physical MPI Forum meeting where the
+\item Have a formal reading at a official OpenSHMEM Committee meeting where the
   meeting quorum has been met.
   \begin{enumerate}
   \item The final text of the proposal to be read must be made
-    publicly available via the general MPI Forum broadcast email list
-    at least two weeks prior to the start date of the physical MPI
-    Forum meeting at which it is to be formally read.
-  \item The formal reading must be scheduled on the physical MPI Forum
+    publicly available via the general OpenSHMEM Committee broadcast email list
+    at least two weeks prior to the start date of the official OpenSHMEM
+    Committee meeting at which it is to be formally read.
+  \item The formal reading must be scheduled on the official OpenSHMEM Committee
     meeting's agenda at least two weeks prior to the meeting's start
     date.
   \item There is no criteria for ``passing'' or ``failing'' a formal
@@ -100,30 +94,22 @@ an MPI Standard Document:
     meeting.
   \end{enumerate}
 
-\item Pass a first official ballot at a physical MPI Forum meeting.
+\item Pass an official ballot at a official OpenSHMEM Committee meeting.
   \begin{enumerate}
-  \item A proposal's first ballot can only be conducted after its
+  \item A proposal's ballot can only be conducted after its
     formal reading.
-  \item A proposal's first ballot must be conducted at a different
-    physical MPI Forum meeting than which it was formally read.
-  \end{enumerate}
-
-\item Pass a second official ballot at a physical MPI Forum meeting.
-  \begin{enumerate}
-  \item A proposal's second ballot can only be conducted after its
-    first ballot passes.
-  \item A proposal's second ballot must be conducted at a different
-    physical MPI Forum meeting than which it passed its first ballot.
+  \item A proposal's ballot must be conducted at a different
+    official OpenSHMEM Committee meeting than which it was formally read.
   \end{enumerate}
 
 \item Changes to proposal text after it was made available for the
   formal reading (i.e., at least two weeks prior to the start date of
-  the physical MPI Forum meeting at which it was read) are permitted
+  the official OpenSHMEM Committee meeting at which it was read) are permitted
   in some cases:
   \begin{enumerate}
-  \item Before the second ballot, changes are permitted if the text
-    delta is presented at a physical MPI Forum meeting and approved
-    via a special formal ballot of IMOVE organizations at that
+  \item After the formal reading and before the ballot, changes are permitted if the text
+    delta is presented at a official OpenSHMEM Committee meeting and approved
+    via a special formal ballot of OOE organizations at that
     meeting:
     \begin{enumerate}
     \item The ballot meets the requirements for the individual
@@ -141,95 +127,46 @@ an MPI Standard Document:
     If the special ballot fails, the original text of the proposal
     is used.
 
-  \item After the second ballot, text changes that do not change the
-    semantics of the proposal are permitted with the unanimous consent
-    of the relevant chapter committee(s).
-  \end{enumerate}
-\end{enumerate}
-
-Proposals may be voluntarily withdrawn at any time before the second
-ballot passes.
-
-Ballots may be deferred to a subsequent physical MPI Forum meeting in
-the following cases:
-
-\begin{enumerate}
-\item Before the ballot is conducted, the proposal author requests a
-  deferral to the next physical MPI Forum meeting.
-\item When the ballot is conducted, it fails to meet the individual
-  ballot quorum.
-\end{enumerate}
-
-If a proposal fails either of its ballots, or if a proposal is
-withdrawn, it must perform the entire procedure again (i.e., start
-over with a formal reading).  If either ballot fails to establish its
-per-ballot quorum, it may be re-cast within the timeframes specified
-above.
-
-%-------------------------------------------------------------------------
-
-\subsection{Errata Proposals}
-
-Errata proposals for the MPI Standard Documents are usually ``small''
-and deal with ``critical'' changes to documents to correct errors,
-clarify egregious ambiguities, etc.
-
-Errata proposals use the following process to be accepted into an MPI
-Standard Document:
-
-\begin{enumerate}
-
-\item Pass a single official ballot at a physical MPI Forum meeting.
-  \begin{enumerate}
-  \item Final errata proposal text must be made publicly available by
-    the Errata document editor via the general MPI Forum broadcast
-    email list at least two weeks prior to the start date of the
-    physical MPI Forum meeting at which its ballot will occur.
-  \end{enumerate}
-
-\item Changes to proposal text after it was made available (i.e., at
-  least two weeks prior to the start date of the physical MPI Forum
-  meeting at which it was balloted) are permitted in some cases:
-  \begin{enumerate}
-  \item Before the ballot, changes are permitted if the text delta is
-    presented at a physical MPI Forum meeting and approved via a
-    special formal ballot of IMOVE organizations at that meeting:
-    \begin{enumerate}
-    \item The ballot meets the requirements for the individual
-      ballot quorum, and
-    \item There are zero ``no'' votes.
-    \end{enumerate}
-
-    If the special ballot fails, the original text of the errata
-    proposal is used.
   \item After the ballot, text changes that do not change the
     semantics of the proposal are permitted with the unanimous consent
     of the relevant chapter committee(s).
   \end{enumerate}
 \end{enumerate}
 
-If an errata proposal fails its ballot, it must perform the entire
-procedure again (i.e., start over by posting the text a minimum of two
-weeks before a physical MPI Forum meeting).
+Proposals may be voluntarily withdrawn at any time before the
+ballot passes.
 
-Procedures for deferring errata proposal ballots are the same as
-those for general text proposals.
+Ballots may be deferred to a subsequent official OpenSHMEM Committee meeting in
+the following cases:
+
+\begin{enumerate}
+\item Before the ballot is conducted, the proposal author requests a
+  deferral to the next official OpenSHMEM Committee meeting.
+\item When the ballot is conducted, it fails to meet the individual
+  ballot quorum.
+\end{enumerate}
+
+If a proposal fails either its ballot, or if a proposal is
+withdrawn, it must perform the entire procedure again (i.e., start
+over with a formal reading).  If either a ballot fails to establish its
+per-ballot quorum, it may be re-cast within the timeframes specified
+above.
 
 %-------------------------------------------------------------------------
 
-\subsection{Process to Ratify an MPI Standard Document}
+\subsection{Process to Ratify an OpenSHMEM Specification Document}
 
-Once a series of changes (errata and text proposals) are voted in by
-the MPI Forum using the processes above, the Forum can publish a new
-revision of the MPI Standard Document.  This could be a new minor or
+Once a series of changes are voted in by
+the OpenSHMEM Committee using the processes above, the Committee can publish a new
+revision of the OpenSHMEM Specification Document.  This could be a new minor or
 major version of the standard; the process below applies to either.
-The Forum Chair, after consulting with the members of the Forum,
+The Committee Chair, after consulting with the members of the Committee,
 initiates this process.
 
-The ratification process of any MPI Forum Document starts after the
-end of the last physical MPI Forum meeting where changes were voted
-into that Document, and typically spans two subsequent physical MPI
-Forum meetings:
+The ratification process of any OpenSHMEM Committee Document starts after the
+end of the last official OpenSHMEM Committee meeting where changes were voted
+into that Document, and typically spans two subsequent official OpenSHMEM
+Committee meetings:
 
 \begin{itemize}
 \item Release Candidate Meeting (RCM)
@@ -242,14 +179,14 @@ Ratification procedures are as follows:
 \item Prior to four weeks before the start of the RCM:
   \begin{itemize}
   \item Chapter Committee Chairs integrate approved changes and/or
-    minor, non-semantic fixes to their chapters into the MPI Standard
+    minor, non-semantic fixes to their chapters into the OpenSHMEM Specification
     Document.
   \item Chapter Committees review changes to their chapters to ensure
-    that approved changes have been integrated accurately into the MPI
-    Standard Document.
+    that approved changes have been integrated accurately into the OpenSHMEM
+    Specification Document.
   \item Chapter Committees may also find problems with approved
-    changes that require further deliberation by the Forum.  Such
-    problems must be itemized for review by the Forum.
+    changes that require further deliberation by the Committee.  Such
+    problems must be itemized for review by the Committee.
   \end{itemize}
 
 \item At least four weeks before the start of the RCM:
@@ -257,7 +194,7 @@ Ratification procedures are as follows:
   \item Chapter Committee Chairs determine whether there have been
     any changes to their chapters since the last published version.
   \item If there have been changes since the last published version,
-    Chapter Committee Chairs publish the following for the Forum
+    Chapter Committee Chairs publish the following for the Committee
     members to review:
     \begin{itemize}
       \item Release Candidate Drafts (in PDF form) of their chapters.
@@ -269,76 +206,76 @@ Ratification procedures are as follows:
         limited to) problems with or mistakes in approved changes.
     \end{itemize}
   \item If there have been no changes since the last
-    published version, Chapter Committee Chairs inform the MPI Forum
-    Chair and the MPI Standard Document Editor of this fact.
+    published version, Chapter Committee Chairs inform the OpenSHMEM Committee
+    Chair and the OpenSHMEM Specification Document Editor of this fact.
   \end{enumerate}
 
 \item After all Chapter Committee Chairs have published their chapter
   drafts, but no later than three weeks before the start of the RCM:
   \begin{enumerate}
-  \item The MPI Standard Document Editor publishes a Release Candidate
-    Draft of the entire MPI Standard Document (in PDF form), including
+  \item The OpenSHMEM Specification Document Editor publishes a Release Candidate
+    Draft of the entire OpenSHMEM Specification Document (in PDF form), including
     all the changes from all Chapter Committees.
   \end{enumerate}
 
 \item In the four-week window before the start of the RCM:
   \begin{enumerate}
-  \item MPI Forum members review all the material published by the
-    Chapter Committee Chairs and MPI Standard Document Editor.
+  \item OpenSHMEM Committee members review all the material published by the
+    Chapter Committee Chairs and OpenSHMEM Specification Document Editor.
   \item Chapter Committees continue to work on still-unresolved
     issues.  {\em Any} changes to text after the Chapter
       Committee Chairs publish their chapter drafts at the four-week
-    window must be specifically discussed with the Forum at the RCM.
+    window must be specifically discussed with the Committee at the RCM.
   \end{enumerate}
 
 \item At the RCM:
   \begin{enumerate}
   \item All Chapter Committee Chairs (or their designees) read their
-    chapters for the entire Forum.  The focus of the readings is the
+    chapters for the entire Committee.  The focus of the readings is the
     changes that have occurred since the last released version (as
     opposed to verbally reading the entire chapter word-for-word).
   \item Items that must be specifically itemized and discussed with
-    the Forum during these readings include:
+    the Committee during these readings include:
     \begin{itemize}
     \item Any unresolved issues found in implementing approved
       changes.
     \item Any technical issues found with approved changes or with the
-      existing MPI Standard Document.
+      existing OpenSHMEM Specification Document.
     \item Any changes that were made within four weeks of the
       beginning of the RCM.
     \end{itemize}
 
-  \item The MPI Forum collectively reviews the entire Release
-    Candidate Draft MPI Standard Document, looking for problems such
+  \item The OpenSHMEM Committee collectively reviews the entire Release
+    Candidate Draft OpenSHMEM Specification Document, looking for problems such
     as (but not limited to):
     \begin{itemize}
     \item Formatting and whitespace problems, spelling errors, and
       other typos.  Such problems should be itemized and can be fixed
-      at the meeting by Chapter Committees and/or the MPI Standard
+      at the meeting by Chapter Committees and/or the OpenSHMEM Specification
       Document Editor.
     \item Logical inconsistencies in the overall document, or problems
       with approved changes.
     \end{itemize}
 
-  \item The MPI Forum Chair compiles a list of all still-unresolved
-    issues that will be fixed before this release of the MPI Standard
+  \item The OpenSHMEM Committee Chair compiles a list of all still-unresolved
+    issues that will be fixed before this release of the OpenSHMEM Specification
     Document.
     \begin{itemize}
-    \item Forum members are encouraged to only allow
+    \item Committee members are encouraged to only allow
       ``errata''-quality items on the list of still-unresolved
       issues.  Larger items should either delay the ratification
-      process or be deferred to a future version of the MPI Standard
+      process or be deferred to a future version of the OpenSHMEM Specification
       Document.
     \end{itemize}
 
-  \item\label{voting:rcm:ballot} Per section~\ref{subsec:general-text-proposals}, a first
+  \item\label{voting:rcm:ballot} Per section~\ref{subsec:general-text-proposals}, a 
     ballot is conducted on ratifying the entire Release Candidate
-    Draft MPI Standard Document {\em along with} the listing of all
+    Draft OpenSHMEM Specification Document {\em along with} the listing of all
     still-unresolved issues and whitespace/spelling/typo fixes created
     in the previous steps.
     \begin{itemize}
     \item If the ballot fails, the entire procedure must be repeated,
-      possibly starting a new RCM at the next physical meeting.
+      possibly starting a new RCM at the next official meeting.
     \end{itemize}
 
   \item The ratification can be ``fast tracked'' if the following
@@ -348,12 +285,12 @@ Ratification procedures are as follows:
     \item The ballot from (\ref{voting:rcm:ballot}) at the
       same meeting passed.
     \item  The list of still-unresolved issues is empty.
-    \item The Forum resolved all other minor issues, such as
+    \item The Committee resolved all other minor issues, such as
       formatting and whitespace problems, spelling errors, and other
-      typos, and the MPI Standard Document Editor has produced a new
+      typos, and the OpenSHMEM Specification Document Editor has produced a new
       Release Candidate Document containing all these fixes.
     \item After a new Release Candidate Document is available, the
-      Forum decides, via special formal ballot, to ``fast track'' the
+      Committee decides, via special formal ballot, to ``fast track'' the
       ratification.  The ballot passes if:
       \begin{enumerate}
       \item The ballot meets the requirements for the individual
@@ -391,51 +328,45 @@ Ratification procedures are as follows:
   chapters have published updated chapter drafts, but no later than
   three weeks before the start of the FRM:
   \begin{enumerate}
-  \item The MPI Standard Document Editor freezes the Release Candidate
-    Document and publishes it to the MPI Forum.
+  \item The OpenSHMEM Specification Document Editor freezes the Release Candidate
+    Document and publishes it to the OpenSHMEM Committee.
   \end{enumerate}
 
 \item At the FRM:
   \begin{enumerate}
-  \item The MPI Forum Secretary conducts a ballot for each individual
+  \item The OpenSHMEM Committee Secretary conducts a ballot for each individual
     change that originated from the list of open issues decided upon
     at the RCM (and was completed before the four-week window).
     Ballots that fail must have their changes reverted.
-  \item\label{voting:slow-track-end} The MPI Forum Secretary conducts
+  \item\label{voting:slow-track-end} The OpenSHMEM Committee Secretary conducts
     a series of ballots for all other changes made since the RCM.  In
     addition to the procedures listed in
     Section~\ref{subsec:official-ballot-voting}, if any ``no'' votes
     are recorded in the ballot for a given change, this change must be
     reverted.
-  \item\label{voting:fast-track-begin} The MPI Forum Chair compiles a
+  \item\label{voting:fast-track-begin} The OpenSHMEM Committee Chair compiles a
     list of all still-unresolved issues that could be fixed before
-    this release of the MPI Standard Document.
+    this release of the OpenSHMEM Specification Document.
 
-  \item On a different calendar date than any other ballots conducted
-    at this meeting related to this document ratification:
-    \begin{enumerate}
     \item If any issues remain on the list of still-unresolved issues,
-      the MPI Forum Secretary conducts a ballot to decide whether
+      the OpenSHMEM Committee Secretary conducts a ballot to decide whether
       these issues delay ratification.
       \begin{itemize}
-      \item If the ballot passes, the next physical MPI Forum meeting
+      \item If the ballot passes, the next official OpenSHMEM Committee meeting
         will repeat this FRM; this process jumps back to
         step~\ref{subsec:official-ballot-voting:t-4weeks-frm}.
       \item If the ballot fails, the Release Candidate Document
         remains unchanged.
       \end{itemize}
-    \item The MPI Forum Secretary conducts a final ballot on the
-      entire Document.\footnote{Historical note: prior MPI Standard
-        Documents had ballots for each chapter and then the entire
-        document.  This is no longer the case.}
+    \item The OpenSHMEM Committee Secretary conducts a final ballot on the
+      entire Document.
       \begin{itemize}
-      \item If the ballot passes, the MPI Standard Document Editor adds
-        a date stamp to the Document and publishes it to the MPI Forum
+      \item If the ballot passes, the OpenSHMEM Specification Document Editor adds
+        a date stamp to the Document and publishes it to the OpenSHMEM Committee
         web site.
       \item If the ballot fails, the entire ratification process must be
         repeated.
       \end{itemize}
-    \end{enumerate}
   \end{enumerate}
 \end{enumerate}
 
@@ -444,10 +375,9 @@ Ratification procedures are as follows:
 \subsection{Changing These Rules}
 
 The procedure for changing these rules is essentially the same as for
-Errata Proposals: publish the proposed change at least two weeks prior
-to a physical MPI Forum meeting and then pass one official ballot.
-
+other proposals: publish the proposed change at least two weeks prior
+to a official OpenSHMEM Committee meeting and then pass one official ballot.
 The new rules take effect as soon as they are approved/voted in by the
-MPI Forum.
+OpenSHMEM Committee.
 
-% LocalWords:  OOE IMOVE
+% LocalWords:  OOE

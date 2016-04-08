@@ -7,96 +7,73 @@
 This document defines rules and conventions for the creation of:
 
 \begin{itemize}
-\item {\bf MPI Standard Document:} the main document defining the
-  Message Passing Interface standard.
-\item {\bf MPI Companion Documents:} additional documents published by
-  the MPI Forum in addition to the MPI Standard Document. These
-  documents are ratified by the MPI Forum, but are not part of the
-  official MPI Standard Document.
+\item {\bf OpenSHMEM Specification Document:} the main document defining the
+  OpenSHMEM Application Programming Interface specification.
 \end{itemize}
 
-Both types of documents are marked with monotonically increasing version numbers using a major/minor version number scheme.
+OpenSHMEM specification documents are marked with monotonically increasing
+version numbers using a major/minor version number scheme.
 
 \section{Definitions of Roles}
 
 The following defines the roles of the people or groups of people
-involved in the MPI standardization process:
+involved in the OpenSHMEM specification process:
 
 \begin{itemize}
-\item {\bf MPI Forum:} The group of people actively involved in the
-  standardization process by participation in physical meetings,
-  participation in MPI working groups, and / or chapter committees.
-\item {\bf MPI Forum Chair:} Is responsible for organizing the agenda
-  for physical MPI Forum meetings as well as the activities leading to the
-  publication of MPI Standard and MPI Companion Documents. The Forum
-  Chair also maintains the overall outside presence of the MPI Forum.
-\item {\bf MPI Forum Secretary:} Is responsible for organizing and
-  recording ballots as well as artifacts from the physical MPI Forum
+\item {\bf OpenSHMEM Committee:} The group of people actively involved in the
+  specification process by participation in official meetings,
+  participation in OpenSHMEM working groups, and chapter committees.
+\item {\bf OpenSHMEM Committee Chair:} Is responsible for organizing the agenda
+  for official OpenSHMEM Committee meetings as well as the activities leading to the
+  publication of the OpenSHMEM Specification. The Committee
+  Chair also maintains the overall outside presence of the OpenSHMEM Committee.
+\item {\bf OpenSHMEM Committee Secretary:} Is responsible for organizing and
+  recording ballots as well as artifacts from the official OpenSHMEM Committee
   meetings.
-\item {\bf MPI Standard Document Editor:} Is responsible for both
+\item {\bf OpenSHMEM Specification Document Editor:} Is responsible for both
   maintaining the overall document and its repository, and for
-  publishing newly ratified versions of the MPI documents.
+  publishing newly ratified versions of the OpenSHMEM documents.
+  % TODO Begin: Keep chapter committees?
 \item {\bf Chapter Committee Chair (sometimes referred to as ``Chapter
   Author''):} Is responsible for implementing and organizing reviews
   for approved changes into their respective chapter(s).
 \item {\bf Chapter Committee:} Assists the Chapter Committee Chair in
   implementing and reviewing changes for the respective chapters.
+  % TODO End
 \item {\bf Working Group:} Group of people working on individual,
   possibly cross-cutting topics that can lead to proposed changes for
-  the MPI Standard Document. Working groups can be established at MPI
-  Forum meetings once at least four IMOVE organizations indicate
+  the OpenSHMEM Specification Document. Working groups can be established at OpenSHMEM
+  meetings once at least four organizations indicate
   support for that proposed Working Group.
 \item {\bf Working Group Chair:} Is responsible for organizing the
-  work in the Working Group, reporting to the MPI Forum on progress in
-  the working group, maintains the outside presence of the Working
+  work in the Working Group, reporting to the OpenSHMEM Committee on progress in
+  the working group, maintaining the outside presence of the Working
   Group, and organizing regular Working Group meetings.
 \end{itemize}
 
 \section{Ballot Definitions}
 
 \begin{itemize}
-\item {\bf Physical MPI Forum Meeting:} An open meeting of the entire
-  MPI Forum in a physical location (vs.\ a teleconference or other
-  virtual meeting).  In-person attendance to the meeting is open to
-  all organizations in the MPI Forum as well as the general public.
+\item {\bf Official OpenSHMEM Committee Meeting:} An open meeting of the entire
+  OpenSHMEM Committee.  Attendance to the meeting is open to
+  all organizations in the OpenSHMEM Committee as well as the general public.
 
 \item {\bf Organization:} A business entity that sends one or more
-  representatives to a physical MPI Forum meeting.
+  representatives to a official OpenSHMEM Committee meeting.
 
-\item {\bf Registration:} Individuals register for each physical MPI
-  Forum meeting that they will attend.  At the time of registration,
-  individuals declare which organization they will represent at that
-  meeting.
-
+ % TODO: This gives OSSS a lot of power of the specification
 \item {\bf Overall Organization Eligibility (OOE):} An organization is
-  generally eligible to vote if it has registered and had one or more
-  representatives physically present at two out of the last three
-  physical MPI Forum meetings (including the current meeting).
+  generally eligible to vote if it is considered to be a member in good
+  standing by Open Source Software Solutions, Inc. (OSSS).  A list of eligible
+  organizations will be made publicly available (e.g. on the OpenSHMEM website)
+  before the ballot deadline for any official meeting.
 
-\item {\bf Individual Meeting Organization Voting Eligibility
-    (IMOVE):} An organization is eligible to vote at a specific
-  physical MPI Forum meeting if all of the following are true:
-  \begin{itemize}
-  \item The organization is OOE.
-  \item An individual representing this organization registered for
-    that specific physical MPI Forum meeting before the first ballot
-    occured.
-  \item The organization had at least one of its representatives
-    physically present during that specific physical MPI
-    Forum meeting.
-  \end{itemize}
-  Once an organization becomes IMOVE for a specific physical MPI Forum
-  meeting, that organization stays IMOVE for the remainder of that
-  specific physical MPI Forum meeting.  For example, if an
-  organization's only representative leaves the meeting, that
-  organization still remains IMOVE.
-
-\item {\bf Meeting Quorum:} Quorum is established at a physical MPI
-  Forum meeting when more than $\nicefrac{2}{3}$ of OOE organizations
-  have registered for that meeting.
+\item {\bf Meeting Quorum:} Quorum is established at a official OpenSHMEM
+  Committee meeting when more than $\nicefrac{2}{3}$ of OOE organizations
+  are present for that meeting.
 
 \item {\bf Individual Ballot Quorum:} Quorum is established for an
-  individual ballot when more than $\nicefrac{3}{4}$ of IMOVE
+  individual ballot when more than $\nicefrac{3}{4}$ of OOE
   organizations at the meeting cast a vote (vs.\ abstain).  The number
-  of IMOVE organizations is counted at the beginning of each ballot.
+  of OOE organizations is counted at the beginning of each ballot.
 \end{itemize}
